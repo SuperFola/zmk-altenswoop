@@ -27,8 +27,7 @@
                 <&kp>;
 
             #binding-cells = <2>;
-            quick-tap-ms = <180>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <160>;
             global-quick-tap;
         };
         ltq: ltq {
@@ -40,8 +39,7 @@
 
             #binding-cells = <2>;
             global-quick-tap;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <180>;
+            tapping-term-ms = <160>;
         };
     };
 
@@ -142,14 +140,14 @@
         base {
             label = "Base";
             bindings = <
-&kp Q        &kp W         &lt 4 E      &kp R                &kp T           &kp Y        &kp U                &lt 2 I           &kp O         &kp P
-&gqt LALT A  &gqt LSHFT S  &gqt LGUI D  &gqt LEFT_CONTROL F  &lt 1 G         &lt 1 H      &gqt LEFT_CONTROL J  &gqt LCMD K       &gqt LSHFT L  &gqt LALT SEMI
-&kp Z        &kp X         &kp C        &kp V                &kp B           &kp N        &kp M                &kp COMMA         &kp DOT       &kp FSLH
-                           &none        &kp SPACE            &lt 3 ESCAPE    &lt 3 ENTER  &kp BACKSPACE        &kp K_PLAY_PAUSE
+&kp Q        &kp W         &lt 4 E      &kp R                &kp T            &kp Y         &kp U                &lt 2 I           &kp O         &kp P
+&gqt LALT A  &gqt LSHFT S  &gqt LGUI D  &gqt LEFT_CONTROL F  &ltq 1 G         &ltq 1 H      &gqt LEFT_CONTROL J  &gqt LCMD K       &gqt LSHFT L  &gqt LALT SEMI
+&kp Z        &kp X         &kp C        &kp V                &kp B            &kp N         &kp M                &kp COMMA         &kp DOT       &kp FSLH
+                           &none        &kp SPACE            &ltq 3 ESCAPE    &ltq 3 ENTER  &kp BACKSPACE        &kp K_PLAY_PAUSE
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
                 <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
@@ -177,17 +175,17 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LG(RIGHT) LG(LEFT)>,
+                <&inc_dec_kp F24 F24>,
                 <&inc_dec_kp F24 F24>;
         };
 
         navigation {
             label = "NAV";
             bindings = <
-&kp F1        &kp F2          &kp F3        &kp F4            &kp F5    &kp F7        &kp F8      &kp F9  &kp F10    &kp F12
-&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp F6    &kp LEFT      &kp DOWN    &kp UP  &kp RIGHT  &none
-&bootloader   &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1      &none     &out OUT_TOG  &none       &none   &none      &bootloader
-                              &none         &trans            &trans    &kp TAB       &kp DELETE  &none
+&kp F1        &kp F2          &kp F3        &kp F4            &kp F5    &kp F7        &kp F8        &kp F9        &kp F10    &kp F12
+&kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_CONTROL  &kp F6    &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT  &none
+&bootloader   &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1      &none     &out OUT_TOG  &bt BT_SEL 2  &bt BT_SEL 3  &none      &bootloader
+                              &none         &trans            &trans    &kp TAB       &kp DELETE    &none
             >;
 
             sensor-bindings =
