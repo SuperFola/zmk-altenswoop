@@ -3,10 +3,13 @@ manifest:
     # zmk official
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    # testing mouse keys
+    - name: mousekeys
+      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: mousekeys
+      revision: features/pointer-hid-core
       import: app/west.yml
   self:
     path: config
