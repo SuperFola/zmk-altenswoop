@@ -144,7 +144,7 @@
 &kp Q        &kp W         &lt 4 E      &kp R                &kp T            &kp Y         &kp U                &lt 2 I           &kp O         &kp P
 &gqt LALT A  &gqt LSHFT S  &gqt LGUI D  &gqt LEFT_CONTROL F  &ltq 1 G         &ltq 1 H      &gqt LEFT_CONTROL J  &gqt LCMD K       &gqt LSHFT L  &gqt LALT SEMI
 &kp Z        &kp X         &kp C        &kp V                &kp B            &kp N         &kp M                &kp COMMA         &kp DOT       &kp FSLH
-                           &none        &kp SPACE            &ltq 3 ESCAPE    &ltq 3 ENTER  &kp BACKSPACE        &kp K_PLAY_PAUSE
+                           &mkp MB1     &kp SPACE            &ltq 3 ESCAPE    &ltq 3 ENTER  &kp BACKSPACE        &kp K_PLAY_PAUSE
             >;
 
             sensor-bindings =
