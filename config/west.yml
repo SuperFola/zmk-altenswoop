@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/petejohanson
   projects:
     - name: zmk
-      remote: mousekeys
-      revision: features/pointer-hid-core
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
