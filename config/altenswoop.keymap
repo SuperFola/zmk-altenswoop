@@ -20,7 +20,9 @@
             tapping-term-ms = <170>;
             global-quick-tap;
             flavor = "tap-preferred";
+            quick-tap-ms = <190>;
         };
+
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
             label = "LTQ";
@@ -29,6 +31,7 @@
             #binding-cells = <2>;
             global-quick-tap;
             tapping-term-ms = <160>;
+            quick-tap-ms = <180>;
         };
     };
 
@@ -67,54 +70,63 @@
             #binding-cells = <0>;
             bindings = <&kp LA(GRAVE) &kp A>;
         };
+
         m_a_caret: m_a_caret {
             compatible = "zmk,behavior-macro";
             label = "M_A_CARET";
             #binding-cells = <0>;
             bindings = <&kp LA(I) &kp A>;
         };
+
         m_e_cute: m_e_cute {
             compatible = "zmk,behavior-macro";
             label = "M_E_CUTE";
             #binding-cells = <0>;
             bindings = <&kp LA(E) &kp E>;
         };
+
         m_e_grave: m_e_grave {
             compatible = "zmk,behavior-macro";
             label = "M_E_GRAVE";
             #binding-cells = <0>;
             bindings = <&kp LA(GRAVE) &kp E>;
         };
+
         m_e_caret: m_e_caret {
             compatible = "zmk,behavior-macro";
             label = "M_E_CARET";
             #binding-cells = <0>;
             bindings = <&kp LA(I) &kp E>;
         };
+
         m_ou: m_ou {
             compatible = "zmk,behavior-macro";
             label = "M_OU";
             #binding-cells = <0>;
             bindings = <&kp O &kp LA(GRAVE) &kp U>;
         };
+
         m_u_caret: m_u_caret {
             compatible = "zmk,behavior-macro";
             label = "M_U_CARET";
             #binding-cells = <0>;
             bindings = <&kp LA(I) &kp U>;
         };
+
         m_o_caret: m_o_caret {
             compatible = "zmk,behavior-macro";
             label = "M_O_CARET";
             #binding-cells = <0>;
             bindings = <&kp LA(I) &kp O>;
         };
+
         m_paren_quote: m_paren_quote {
             compatible = "zmk,behavior-macro";
             label = "M_PAREN_QUOTE";
             #binding-cells = <0>;
             bindings = <&kp LEFT_PARENTHESIS &kp DOUBLE_QUOTES>;
         };
+
         m_lt_gt_left: m_lt_gt_left {
             compatible = "zmk,behavior-macro";
             label = "M_LT_GT_LEFT";
