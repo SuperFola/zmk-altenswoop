@@ -12,7 +12,7 @@
 
 / {
     behaviors {
-        hm: require-prior-idle-ms {
+        hm: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "Home row mod tap/hold";
             #binding-cells = <2>;
@@ -23,7 +23,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        hl: require-prior-idle-ms {
+        hl: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "Home row layer mod tap/hold";
             #binding-cells = <2>;
