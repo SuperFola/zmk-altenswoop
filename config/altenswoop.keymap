@@ -16,7 +16,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Home row mod tap/hold";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <170>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <170>;
@@ -27,7 +27,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "Home row layer mod tap/hold";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
+            flavor = "balanced";
             tapping-term-ms = <170>;
             quick-tap-ms = <170>;
             require-prior-idle-ms = <170>;
