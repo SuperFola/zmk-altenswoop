@@ -14,35 +14,42 @@ endif
 if SHIELD_ALTENSWOOP_LEFT || SHIELD_ALTENSWOOP_RIGHT
 
 config ZMK_SPLIT
+    bool
     default y
 
 
 if ZMK_DISPLAY
 
 config I2C
-	default y
+    bool
+    default y
 
 config SSD1306
-	default y
+    bool
+    default y
 
 config SSD1306_REVERSE_MODE
-	default y
+    bool
+    default y
 
 endif # ZMK_DISPLAY
 
 if LVGL
 
 config LV_Z_VDB_SIZE
-	default 64
+    int
+    default 64
 
 config LV_Z_DPI
-	default 148
+    int
+    default 148
 
 config LV_Z_BITS_PER_PIXEL
-	default 1
+    int
+    default 1
 
 choice LV_COLOR_DEPTH
-	default LV_COLOR_DEPTH_1
+    default LV_COLOR_DEPTH_1
 endchoice
 
 endif # LVGL
