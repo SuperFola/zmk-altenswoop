@@ -141,14 +141,14 @@
         base {
             label = "Base";
             bindings = <
-&kp Q       &kp W        &lt 4 E     &kp R               &kp T           &kp Y        &kp U               &lt 2 I           &kp O        &kp P
-&hm LALT A  &hm LSHFT S  &hm LGUI D  &hm LEFT_CONTROL F  &hl 1 G         &hl 1 H      &hm LEFT_CONTROL J  &hm LCMD K        &hm LSHFT L  &hm LALT SEMI
-&kp Z       &kp X        &kp C       &kp V               &kp B           &kp N        &kp M               &kp COMMA         &kp DOT      &kp FSLH
-                         &mkp LCLK   &kp SPACE           &hl 3 ESCAPE    &hl 3 ENTER  &kp BACKSPACE       &kp K_PLAY_PAUSE
+&kp Q       &kp W        &lt 4 E     &kp R               &kp T           &kp Y        &kp U               &lt 2 I     &kp O        &kp P
+&hm LALT A  &hm LSHFT S  &hm LGUI D  &hm LEFT_CONTROL F  &hl 1 G         &hl 1 H      &hm LEFT_CONTROL J  &hm LCMD K  &hm LSHFT L  &hm LALT SEMI
+&kp Z       &kp X        &kp C       &kp V               &kp B           &kp N        &kp M               &kp COMMA   &kp DOT      &kp FSLH
+                         &mkp LCLK   &kp SPACE           &hl 3 ESCAPE    &hl 3 ENTER  &kp BACKSPACE       &kp C_PLAY
             >;
 
             sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
                 <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
