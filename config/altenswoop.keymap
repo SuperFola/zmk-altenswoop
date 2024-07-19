@@ -10,6 +10,8 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define ZMK_MOUSE_SCRL_VAL 140
+
 / {
     behaviors {
         hm: require_prior_idle {
@@ -38,6 +40,7 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
+            tap-ms = <20>;
         };
     };
 
